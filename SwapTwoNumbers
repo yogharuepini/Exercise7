@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+void swap(float , float);
+
+int main()
+{
+	float a, b; //input numbers to swap
+	cout << "Please enter 2 integers A and B:\n";
+	cin >> a >> b;
+	swap(a, b); //function call to swap and the display is done in it
+	cout << "\nA in main is: " << a << endl;
+	cout << "B in main is: " << b << endl;
+	return 0;
+}
+
+void swap(float a, float b) //define function 
+{
+	cout << "\nYou entered A is: ";
+	cout << a << endl;
+	cout << "You entered B is: ";
+	cout << b << endl;
+	float temp = a; //swapping algorithm
+	a = b;
+	b = temp;
+	cout << "\nAfter swap the value A now is: ";
+	cout << a << endl;
+	cout << "After swap the value B now is: ";
+	cout << b << endl;
+}
